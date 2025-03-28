@@ -7,9 +7,79 @@
 </head>
 <body>
     <h2>HTML FORM</h2>
-    <form action="api/login" method="get" autocomplete="on">
+    <form action="api/login" method="post" autocomplete="on" target="blank"></form>
 <!--use the novalidate attribute in another form-->
-<input type="text" id="first name" placeholder="type first name"
+<h4>input type "text"</h4>
+<label for="first name ">FIRST NAME:</label>
+<input type="text" id="first name" placeholder="type first name" value="" name="first name"required>
+<label for="lname">LAST NAEM:</label>
+
+<input type="text" id="lname" placeholder="type last name" vlau="Acul" name="lname">
+
+<br />
+<h4>input type "checkbox" </h4>
+<p>select the skills you have </p>
+
+<input type="checkbox"id="coding"name="skills" value="coding"/>
+<label for="coding">Coding:</label>
+
+<br />
+<!--input type checkbox-->
+<input type="checkbox" id="typing" name="skills" value="typing"/>
+<label for="typing">Typing:</label>
+
+<br />
+<!--input type password-->
+<h4>input typr "password" </h4>
+<P> provide input for the password below </P>
+<label for="user password">Password</label>
+<input type="password" id="user password" name="user password" required>
+
+<br />
+<!--creating a submit button-->
+<h4> input type "submit" </h4>
+<p>click the button to submit for data</p>
+<input type="submit" value="SUBMIT">
+
+<br />
+<!--creating a reset button-->
+<h4>input type "reset"</h4>
+<input type="reset" value="RESET"/>
+
+<br />
+<!--creating an email input field-->
+<h4>input type "email"</h4>
+<input type="email" id="userEMAIL" placeholder="thynkunlimited@gmail.com" name="useremail"required />
+
+ <br />
+ <!--date input type-->
+ <h4>input type "datetime-local"</h4>
+ <p>select todays time and date </p>
+ <label for="date_time"></label>
+ <input type="datetime-local" id="date time" name="date time" />
+
+ <br />
+ <h4>input type "tel"</h4>
+ <p>provide youer phone number</p>
+ <label for="phone number"></label>
+ <input type="tel" id="phone_number" name="phone_number" pattern="123-45689">
+
+
+ <br />
+ <h4>text area field</h4>
+ <textarea name="feedback_message" id="feedback_message" row="29" cols="59"></textarea>
+
+ <br />
+ <!--creating a drop down-->
+ <h4>creating a dropdown menu</h4>
+<p>select  your country</p>
+<label for="countty">COUNTRY:></label>
+<Select name="county"  id="country"></Select>
+<option value="Kenya"></option>
+<option value="Tanzania"></option>
+<option value="uganda"></option>
+<
+
     </form>
     
 </body>
